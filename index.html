@@ -339,7 +339,7 @@ img, object{
 	</div>
 	<div id="content" class="w3-container">
 		<p>Click to see your results.</p>
-		<a href="#last" class="w3-button w3-blue w3-hover-border-color" onclick="getResults(); getAddendum;">Get Results</a> <!--This adds a button that says results and displays the results upon click.-->		
+		<a href="#last" class="w3-button w3-blue w3-hover-border-color" onclick="getResults();">Get Results</a> <!--This adds a button that says results and displays the results upon click.-->		
 	</div>
 </div>
 
@@ -347,15 +347,25 @@ img, object{
 <div class="page" id="last">
 	<!-- This produces the results title -->
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Depression Severity and Major Depressive Disorder Possibility</h1>
+		<h1>Depression Severity</h1>
 	</div>
 	<!-- This produces the results -->
 	<div id="content" class="w3-container">
 		<p id="results">DepressionSeverity</p> 
-		<p>Be Healthy!</p>
+		<p>Click to see if you have major depressive disorder.</p>
+		<a href="#Add" class="w3-button w3-blue w3-hover-border-color" onclick="getAddendum;">Get Results</a>
 	</div>
 </div>
-	
+<div class="page" id="Add">
+	<!-- This produces the results title -->
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Major Depressive Disorder</h1>
+	</div>
+	<!-- This produces the results -->
+	<div id="content" class="w3-container">
+		<p id="results">MajorDepressiveDisorder</p>
+	</div>
+</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
