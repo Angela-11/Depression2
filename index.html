@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 Screen for depression in the individual taking the questionnaire.
  
 Known Issues:
-fix button features
+fix resuls for major depressive disorder score
 -->       
 	
 <head> 
@@ -64,6 +64,7 @@ fix button features
 	resultsHTML.innerHTML = "Depression Severity = " +DepressionSeverity+ "<br>score of 0-4 indicates minimal or none; monitor, may not require treatment<br>score of 5-9 indicates mild; use clinical judgement(symptom duration, functional impairment) to determine necessity of treatment<br>score of 10-14 indicates moderate; use clinical judgement(symptom duration, functional impairment) to determine necessity of treatment<br>score of 15-19 indicates moderately severe; warrants active treatment with psychotherapy, medications, or combination<br>score of 20-27 indicates severe; warrants active tratment with psychotherapy, medicaions, or combination"
 	} //This function sets up the equation to get the results. It also defines the variable (getresults) which equals the equation.
 	function getAddendum(){ 
+		var resultsHTML = document.getElementById("results2");
 		var MajorDepressiveDisorder = (not_at_all_count*0)+(several_days_count*1)+(more_than_half_the_days_count*1)+(nearly_every_day_count*1);
 	resultsHTML.innerHTML = "Major Depressive Disorder Score = " +MajorDepressiveDisorder+ "<br>Consider major depressive disorder if the score is 5 or higher.”
 	}
